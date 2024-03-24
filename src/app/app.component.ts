@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio2';
-}
+  blurBackground: boolean = false;
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const scrollPosition = window.pageYOffset;
+
+    // Vérifiez si l'utilisateur fait défiler vers le bas
+    if (scrollPosition > 0) {
+      this.blurBackground = true;
+    } else {
+      this.blurBackground = false;
+    }
+  }
+  }
