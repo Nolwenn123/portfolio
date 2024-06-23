@@ -31,18 +31,7 @@
     100% { background-position: 51% 0% }
 }
 
-/* h1 {
-    position: relative;
-    font-size: 300px;
-    text-align: center;
-    color: rgb(239, 239, 239);
-    font-family: "League Gothic", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 81.1;
-    z-index: 4;
-} */
+
 
 .photo {
     position: absolute;
@@ -50,6 +39,21 @@
     left: 45%;
     transform: translate(-50%, -50%);
     z-index: 4;
+}
+
+@media screen and (max-width: 768px) {
+    .photo {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        padding-bottom: 40vh;
+        padding-left: 33vw;
+        width: 80vw;
+        height: auto;
+    }
+    
+
+
 }
 
 .image {
@@ -81,8 +85,8 @@
 }
 
 .navbar img {
-    margin-top: 5vh;
-    margin-left: 3vw;
+    padding-top: 5vh;
+    padding-left: 3vw;
     width: 9vw;
     height: auto;
 }
@@ -92,10 +96,21 @@
     background-color: transparent;
     border: none;
     float: right;
-    margin-right: 3vw;
+    margin-right: 3vw;  
     z-index: 6;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar img {
+        width: 80px;
+        padding-left:10vw;
+    }
+
+    .navbar button {
+        width: 150px; 
+        padding-right: 40vw;
+    }
+}
 .presentation img {
     margin-right: 2vw;
     position: relative;
@@ -103,6 +118,17 @@
     width: 30vw;
     height: auto;
     z-index: 4;
+}
+
+@media screen and (max-width: 768px) {
+    .presentation img {
+        /* position: relative;
+        float: right;
+        width: 80vw;
+        height: auto;
+        z-index: 4; */
+        display: none;
+    }
 }
 
 .card-container {
@@ -168,4 +194,60 @@ h2 {
 .blur {
     filter: blur(5px);
     transition: filter 0.5s ease;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .card-container {
+        margin: 0;
+        padding-top: 80vh;
+        position: relative;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(17, auto);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .card-container img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .card-container p {
+        text-align: center;
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14, .div15, .div16, .div17, .div18 {
+        grid-area: auto;
+    }
+}
+
+/* Style pour les images mobiles */
+.mobile-image {
+    display: none;
   }
+  
+  /* Style pour les images desktop */
+  .desktop-image {
+    display: none;
+  }
+  
+  /* Media query pour les écrans de téléphone */
+  @media screen and (max-width: 768px) {
+    .mobile-image {
+      display: block;
+      padding-bottom: 15vh;
+      width: 90vw;
+      height: auto;
+    }
+  }
+  
+  /* Media query pour les écrans d'ordinateur */
+  @media screen and (min-width: 769px) {
+    .desktop-image {
+      display: block;
+    }
+  }
+  
