@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     background: 
-      linear-gradient(6deg, #9f2b2b, #000000, #344d36, #344d36, #8d85ff);
+      linear-gradient(6deg, #9f2b2b, #000000, #77b57d, #344d36, #8d85ff);
     background-size: 1000% 1000%;
     animation: AnimationName 15s ease infinite;
 }
@@ -223,7 +223,7 @@ h5 {
 
     .card-container {
         margin: 0;
-        padding: 0;
+        padding: 0 7vw;
         padding-top: 80vh;
         position: relative;
         grid-template-columns: 1fr;
@@ -232,6 +232,8 @@ h5 {
         grid-row-gap: 1vw;
         width: 100%;
         overflow-x: hidden;
+        box-sizing: border-box;
+
     }
 
     .card-container img {
@@ -246,6 +248,25 @@ h5 {
     .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14, .div15, .div16, .div17, .div18 {
         grid-area: auto;
     }
+
+    .div15 { grid-area: 1 / 1 / 2 / 2; }
+    .div16 { grid-area: 2 / 1 / 3 / 2; }
+    .div17 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 4 / 1 / 5 / 2; }
+    .div7 { grid-area: 4 / 2 / 5 / 3; }
+    .div9 { grid-area: 5 / 1 / 6 / 2; }
+    .div20 { grid-area: 6 / 1 / 7 / 2;}
+    .div10 { grid-area: 6 / 2 / 7 / 3; }
+    .div11 { grid-area: 7 / 1 / 8 / 2; }
+    .div12 { grid-area: 7 / 2 / 8 / 3; }
+    .div13 { grid-area: 8 / 1 / 9 / 2; }
+    .div14 { grid-area: 8 / 2 / 9 / 3; }
+    .div1 { grid-area: 9 / 1 / 10 / 2; }
+    .div2 { grid-area: 10 / 1 / 11 / 2; }
+    .div3 { grid-area: 10 / 2 / 11 / 3; }
+    .div4 { grid-area: 11 / 1 / 12 / 2; }
+
 }
 
 /* Style pour les images mobiles */
