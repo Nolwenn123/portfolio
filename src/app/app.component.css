@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     background: 
-      linear-gradient(6deg, #9f2b2b, #000000, #344d36, #000000);
+      linear-gradient(6deg, #9f2b2b, #000000, #344d36, #344d36, #8d85ff);
     background-size: 1000% 1000%;
     animation: AnimationName 15s ease infinite;
 }
@@ -183,6 +183,7 @@ h4 {
     font-weight: normal;
     color: #dc6f6f;
     font-size: 15px;
+    text-align: justify;
 }
 
 h5 {
