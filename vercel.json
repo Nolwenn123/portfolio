@@ -1,0 +1,14 @@
+{
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Authorization",
+            "value": "Basic bmI6bmI="
+          }
+        ]
+      }
+    ]
+  }
+  
