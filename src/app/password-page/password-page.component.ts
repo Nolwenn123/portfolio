@@ -15,9 +15,11 @@ export class PasswordPageComponent {
   checkPassword() {
     const correctPassword = 'nb'; 
     if (this.passwordInput === correctPassword) {
-      this.router.navigate(['/home']);  // Navigate to the main content
+      this.router.navigate(['/home']);
+
     } else {
       this.errorMessage = 'Incorrect password. Please try again.';
+      
     }
   }
     
